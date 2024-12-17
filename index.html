@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Основные направления развития современных Интернет-технологий</title>
+    <style>
+        section {
+            margin: 25px;
+        }
+        .case-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .case-study {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .case-study p {
+            width: 50%;
+            font-size: 2em;
+        }
+        .cards {
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        .cards .cards__item {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .security {
+            background-image: url('images/background.JPEG');
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .security ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .security ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .security .section-title {
+            color: #f1faee;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .security .section-subtitle {
+            color: #a8dadc;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo logo_place_header">Технологии будущего</div>
+            <h1 class="header__title">Основные направления развития современных Интернет-технологий</h1>
+            <p class="header__subtitle">Как новые реальности и Web 3.0 меняют наш мир <a class="header__link link" href="#techniques">Подробнее &xrarr;</a></p>
+            <img src="./images/header-image.png" alt="VR и AR" class="header__main-illustration">
+            <div class="header__square-pic rotation"></div>
+        </header>
+        <main class="content">
+            <section class="description" id="vr-ar-mr">
+                <article class="two-columns">
+                    <h2 class="two-columns__brief">VR, AR и MR: Ключевые технологии</h2>
+                    <div class="two-columns__main-text">
+                        <p class="two-columns__paragraph"><strong>Виртуальная реальность (VR)</strong> обеспечивает полное погружение пользователя в цифровую среду. Применяется в играх, обучении и медицинских симуляциях.</p>
+                        <p class="two-columns__paragraph"><strong>Дополненная реальность (AR)</strong> накладывает цифровой контент на реальный мир, делая взаимодействие гибридным и информативным. Популярна в ритейле и производстве.</p>
+                        <p class="two-columns__paragraph"><strong>Смешанная реальность (MR)</strong> интегрирует реальные и виртуальные элементы для их взаимодействия в реальном времени. Идеально подходит для промышленного обучения.</p>
+                        <p class="two-columns__paragraph">В 2023 году рынок VR, AR и MR достиг $30 миллиардов, и прогнозируется рост до $80 миллиардов к 2026 году. Эти технологии играют ключевую роль в образовании, здравоохранении, архитектуре и игровой индустрии.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="techniques">
+                <h2 class="section-title" id="techniques">Области применения технологий</h2>
+                <div class="cards">
+                    <div class="cards__item">
+                        <img src="./images/education-vr.jpg" alt="VR в образовании" class="cards__image">
+                        <h3 class="cards__title">Образование</h3>
+                        <p class="cards__description">VR и AR позволяют обучающимся изучать сложные концепции через интерактивные симуляции и практику.</p>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./images/industry-mr.jpg" alt="MR в промышленности" class="cards__image">
+                        <h3 class="cards__title">Промышленность</h3>
+                        <p class="cards__description">MR улучшает процессы производства, предоставляя рабочим доступ к интерактивным инструкциям и визуализациям.</p>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./images/health-vr.webp" alt="VR в медицине" class="cards__image">
+                        <h3 class="cards__title">Медицина</h3>
+                        <p class="cards__description">VR помогает в симуляциях для хирургов, а AR предоставляет врачам доступ к детализированной визуализации органов пациента.</p>
+                    </div>
+                    <div class="cards__item">
+                        <img src="./images/entertainment-vr.webp" alt="VR в развлечениях" class="cards__image">
+                        <h3 class="cards__title">Развлечения</h3>
+                        <p class="cards__description">VR-игры, фильмы и иммерсивные театры создают захватывающий опыт для пользователей.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="security" id="security">
+                <h2 class="section-title">Безопасность и Web 3.0</h2>
+                <p class="section-subtitle">Как новые технологии обеспечивают приватность</p>
+                <div class="two-columns">
+                    <p class="two-columns__paragraph">Web 3.0 опирается на децентрализацию данных и использование блокчейна для обеспечения безопасности и прозрачности.</p>
+                    <ul>
+                        <li><strong>Блокчейн:</strong> Данные защищены от взлома благодаря распределённым системам.</li>
+                        <li><strong>Криптография:</strong> Обеспечивает конфиденциальность через сложные алгоритмы.</li>
+                        <li><strong>Самоопределяемая идентификация (SSI):</strong> Пользователи контролируют свои данные.</li>
+                        <li><strong>Искусственный интеллект:</strong> AI-алгоритмы анализируют угрозы и предотвращают кибератаки в реальном времени.</li>
+                        <li><strong>Машинное обучение:</strong> Системы предсказывают уязвимости и реагируют на новые риски до их появления.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="case-study">
+                <h2 class="section-title">Кейс: AR в промышленности</h2>
+                <p class="section-subtitle">Пример применения AR для повышения безопасности</p>
+                <div class="case-content">
+                    <img src="./images/case-ar.webp" alt="AR в промышленности" class="case-content__image" width="30%" style="border-radius: 25%; margin: 30px">
+                    <p class="case-content__text">Компания Boeing внедрила AR-очки для специалистов по сборке самолетов. Инженеры получают пошаговые инструкции прямо в поле зрения, что позволило сократить время сборки на 25% и снизить ошибки на 30%.</p>
+                </div>
+            </section>
+            <section class="video">
+                <h3 class="section-title">Видео о VR, AR и MR</h3>
+                <p class="section-subtitle">Посмотрите, как это работает</p>
+                <div class="video__iframes">
+                    <iframe class="video__iframe" src="https://www.youtube.com/watch?v=IFgGzOpjlUM" allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://www.youtube.com/watch?v=O6KWWLnoFfI" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="conclusion" id="conclusion">
+                <h2 class="section-title">Заключение</h2>
+                <p>Технологии VR, AR и MR создают новые способы взаимодействия с миром, а Web 3.0 обеспечивает безопасность и прозрачность данных. Будущее за интеграцией инноваций и защиты пользователей.</p>
+                <a href="https://bitcoin.org/bitcoin.pdf" class="link">Подробнее о блокчейне &xrarr;</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__author">&copy; 2024, Елшин Александр</p>
+        </footer>
+    </div>
+</body>
+</html>
