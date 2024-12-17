@@ -3,9 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
     <title>Основные направления развития современных Интернет-технологий</title>
     <style>
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            margin: 0;
+        }
+        main {
+            display: block;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+        hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+        pre {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+        a {
+            background-color: transparent;
+        }
+        abbr[title] {
+            border-bottom: none;
+            text-decoration: underline;
+            text-decoration: underline dotted;
+        }
+        b, strong {
+            font-weight: bolder;
+        }
+        code, kbd, samp {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+        small {
+            font-size: 80%;
+        }
+        sub, sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+        sub {
+            bottom: -0.25em;
+        }
+        sup {
+            top: -0.5em;
+        }
+        img {
+            border-style: none;
+        }
+        button, input, optgroup, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+        button, input {
+            overflow: visible;
+        }
+        button, select {
+            text-transform: none;
+        }
+        button, [type="button"], [type="reset"], [type="submit"] {
+            -webkit-appearance: button;
+        }
+        button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+        button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText;
+        }
+        fieldset {
+            padding: 0.35em 0.75em 0.625em;
+        }
+        legend {
+            box-sizing: border-box;
+            color: inherit;
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            white-space: normal;
+        }
+        progress {
+            vertical-align: baseline;
+        }
+        textarea {
+            overflow: auto;
+        }
+        [type="checkbox"], [type="radio"] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+        [type="search"] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px; 
+        }
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit;
+        }
+        details {
+            display: block;
+        }
+        summary {
+            display: list-item;
+        }
+        template {
+            display: none;
+        }
+        [hidden] {
+            display: none;
+        }
+        .logo {
+            width: 228px;
+            height: 32px;
+        }
+        .logo_place_header {
+            position: absolute;
+            top: 30px;
+            left: 64px;
+            z-index: 2;
+            font-weight: bold;
+        }
+        .techniques {
+            margin: 100px auto;
+            width: 80%;
+        }
+        .two-columns {
+            justify-content: space-between;
+            margin: 0 auto;
+            display: flex;
+            width: 80%;
+        }
+        .two-columns__brief {
+            width: 175px;
+            line-height: 1.2;
+            font-size: 18px;
+            font-weight: normal;
+            color: #4820adbb;
+            margin: 0;
+        }
+        .two-columns__main-text {
+            max-width: 80%;
+        }
+        .two-columns__paragraph {
+            line-height: 34px;
+            font-size: 24px;
+            font-weight: normal;
+            min-width: 784px;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+          
+        .two-columns__paragraph:last-child {
+            margin-bottom: 0;
+        }
+        .two-columns__span-accent {
+            line-height: 34px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .video {
+            margin-top: 100px;
+        }
+        .video__iframe {
+            width: 515px;
+            height: 316px;
+            margin-right: 20px;
+            border: 0px;
+        }
+        .video__iframe:last-of-type {
+            margin-right: 0;
+        }
+        .video__iframes {
+            display: flex;
+            justify-content: center;
+            margin: 50px auto 0;
+        }
+        @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          
+        .rotation {
+            animation: rotation 20s linear infinite;
+        }
+        .section-subtitle {
+            line-height: 34px;
+            font-size: 24px;
+            font-weight: normal;
+            text-align: center;
+            margin: 20px auto 0 auto;
+            width: 60%;
+        }
+        .section-subtitle_theme_dark {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .section-title {
+            line-height: 1.15;
+            font-size: 60px;
+            font-weight: 600;
+            text-align: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+        .section-title_theme_dark {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+          
+        .footer {
+            min-height: 50px;
+            background-color: #ffffff;
+            padding-bottom: 40px;
+            box-sizing: border-box;
+            display: flex;
+        }
+        .footer__author {
+            line-height: 25px;
+            font-size: 18px;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 18px 0;
+            text-align: center;
+            width: 100%;;
+        }
+        .footer__column {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer__column_content_copyright {
+            flex-basis: 711px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer__column-heading {
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .footer__column-link {
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: normal;
+            color: white;
+            text-decoration: none;
+        }
+        .footer__column-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px 0;
+        }
+        .footer__columns {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .footer__social-icon {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+        }
+        .header {
+            height: 100vh;
+            min-height: 600px;
+            max-height: 756px;
+            display: flex;
+            margin: 0;
+            background-color: #f2f2f2;
+            position: relative;
+            overflow: hidden;
+        }
+        .header__link {
+            text-decoration: none;
+            color: #4820adbb;
+        }
+        .header__main-illustration {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 500px;
+            height: 508px;
+            z-index: 1;
+            object-fit: cover;
+        }
+        .header__square-pic {
+            position: absolute;
+            height: 568px;
+            width: 568px;
+            top: 64px;
+            right: 0;
+            background-color: #a3eb1de4;
+        }
+        .header__subtitle {
+            position: absolute;
+            bottom: 30px;
+            left: 64px;
+            width: 388px;
+            margin: 0;
+            line-height: 25px;
+            font-size: 18px;
+            font-weight: normal;
+            z-index: 2;
+        }
+        .header__title {
+            align-self: center;
+            margin: 0 0 0 64px;
+            max-width: 730px;
+            z-index: 2;
+            line-height: 96px;
+            font-size: 90px;
+            font-weight: 600;
+        }
+        .link:hover {
+            opacity: 0.6;
+            transition-duration: 0.5s;
+        }
+        .page {
+            min-width: 1100px;
+            max-width: 1600px;
+            margin: 0 auto;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+          
+        .description {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .cards {
+            display: flex;
+            width: 920px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .cards__description {
+            line-height: 23px;
+            font-size: 18px;
+            font-weight: normal;
+            text-align: center;
+            margin: 16px 0 0 0;
+        }
+        .cards__image {
+            width: 160px;
+            height: 160px;
+            margin: 60px 40px 43px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .cards__item {
+            width: 240px;
+            margin-right: 100px;
+        }
+        .cards__item:nth-child(3n) {
+            margin-right: 0;
+        }
+        .cards__title {
+            line-height: 1.15;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+        }
+        
         section {
             margin: 25px;
         }
@@ -131,8 +519,8 @@
                 <h3 class="section-title">Видео о VR, AR и MR</h3>
                 <p class="section-subtitle">Посмотрите, как это работает</p>
                 <div class="video__iframes">
-                    <iframe class="video__iframe" src="https://www.youtube.com/watch?v=IFgGzOpjlUM" allowfullscreen></iframe>
-                    <iframe class="video__iframe" src="https://www.youtube.com/watch?v=O6KWWLnoFfI" allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://vkvideo.ru/video_ext.php?oid=-44034282&id=456239189&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://vkvideo.ru/video_ext.php?oid=-219081787&id=456239042&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
                 </div>
             </section>
             <section class="conclusion" id="conclusion">
